@@ -1,0 +1,136 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  CHAMB
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+
+<body class="bo">
+
+
+
+    <img style="width: 100%;" src=" {% static 'Product/picture/028.jpg' %}" alt="">
+
+    <center style="width: 100%;">
+        <div>
+            <h1>CHAMBERED NAUTILUS ALUMNI</h1>
+        </div>
+
+        <div style="width: 70%;">
+            <h3 style="text-align: left;color: #034575;">
+                SCI HIGH ALUMNI ARE PART OF THE GREATEST NETWORK OF SCIENTISTS, TECHNOLOGY PROFESSIONALS, 
+                ENGINEERS, AND MATHEMATICIANS REPRESENTING NEW ORLEANS ACROSS THE GLOBE.
+            </h3>
+        </div>
+
+        <div style="width: 70%;color: #666666;">
+            <p  style="text-align: left;">
+                The New Orleans Charter Science & Mathematics High School is committed to connecting our community
+             after high school. We invite alumni to visit the campus and join us alongside our mission by helping
+             to organize annual events and fundraisers. You can connect with Sci High on Facebook, Instagram, or 
+             Twitter and by updating your contact information to receive our email newsletter, and other updates.
+            </p>
+
+            <p style="text-align: left;">
+                Please feel free to contact us with any questions you may have, thoughts about how to enhance our
+                 alumni program, or to schedule a tour to see our brand new, state-of-the-art facility.
+            </p>
+        </div>
+
+        <div style="width: 70%;">
+            <p style="text-align: left;">Communication & Marketing</p>
+        </div>
+
+
+    </center>
+
+   <center style="width: 100%;background-color: #DBF3FC;">
+  <div style="padding-top: 50px;padding-bottom: 50px;">
+
+    <div style="width: 70%;">
+        <h2 style="text-align: left;padding: 10px;background-color: white;">
+        <span style="font-size: larger;font-weight: bolder;"> +</span> TO DO LIST</h2>
+    </div>
+   
+
+    <div style="width: 70%;">
+        <h2 style="text-align: left;padding: 10px;background-color: white;">
+        <span style="font-size: larger;font-weight: bolder;"> +</span> CONTACT PROFILE</h2>
+    </div>
+
+    <div style="width: 70%;">
+     <h2 style="text-align: left;padding:10px;background-color: white;;"> 
+    <span style="font-size: larger;font-weight: bolder;">+</span> TRANSCRIPT REQUEST</h2>
+    </div>
+
+  </div>
+
+   </center>
+
+       <center style="background-color:  #034575;margin-bottom: 0px;width: 100%;"  class="row">
+       <h2 style="color: white;padding-top: 30px">ALUMNI SPOTLIGHT</h2>
+
+           {% for data in keyInView %}
+
+        <img style="width: 400px;height:300px;padding-bottom:30px" src=" {{ data.image.url }}" alt="">
+
+       {% endfor %}
+       </center>
+
+
+   <center style="width: 100%;background-color: #EFEFEF ;">
+    <h2 style="color: #034575;padding-top: 30px;margin-top: 0px;">MORE ALUMNI UPDATES</h2>
+    <div style="width: 70%;text-align: left;">
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;margin-bottom: 10px;">TEACHER - ALL SUBJECTS</h3>
+            <p style="color: #666666;margin-top: 0px;">July 23,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">SPEECH LANGUAGE PATHOL0GISTS - 2024-2025 SCHOOL YEAR</h3>
+            <p style="color: #666666;;margin-top: 0px;">July 30,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">SPECIAL EDUCATION TEACHER - 2024-2025 SCHOOL YEAR</h3>
+            <p style="color: #666666;margin-top: 0px;">July 31,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">INSTRUTIONAL ASSISTANT - 2024-2025 SCHOOL YEAR</h3>
+            <p style="color: #666666;margin-top: 0px;">September 3,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">ALUMNI SPOTLIGHT - DONTREL MITCHELL: SSECOND-YEAR MARKETING STUDENT AT
+             WEATHERHEAD SCHOOL OF MANAGEMENT</h3>
+            <p style="color: #666666;margin-top: 0px;">September 20,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">ALUMNI SPOTLIGHT - JAMEZ McCORKLE: LEAD "OMAR", THE OPERA ABOUT
+             A MUSLIM SLAVE IN AMERICA.</h3>
+            <p style="color: #666666;margin-top: 0px;">October 3,2024</p>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <h3 style="color: #034575;;margin-bottom: 10px;">ALUM JOURDAN BARNES ON GREAT DAY LOUISIANA</h3>
+            <p style="color: #666666;margin-top: 0px;">November 15,2024</p>
+        </div>
+    </div>
+   </center>
+
+
+
+</body>
+</html>
+
+{% endblock  %}

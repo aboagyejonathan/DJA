@@ -1,0 +1,44 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  DINNING
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+<body class="bo">
+
+
+
+    <img style="width: 100%;" src=" {% static 'Product/picture/036.jpg' %}" alt="">
+
+    <center style="width: 100%;color: #01416f;">
+
+        <center style="font-weight: bold;">
+            <h2>DINING COMMON MENUS</h2>
+        </center>
+
+        <center style="width: 70%;">
+           <div style="text-align: left;margin-bottom: 40px;font-weight: bold;">
+            <h3 style="margin-bottom: 10px;">OCTOBER 2024 - LUNCH MENU</h3>
+            <P style="color: #444444;margin-top: 0px;">October 5,2024</P>
+           </div>
+
+
+           <div style="text-align: left;font-weight: bold;">
+            <h3  style="margin-bottom: 10px;">OCTOBER 2024 - BREAKFAST MENU</h3>
+            <p style="color: #444444;margin-top: 0px;">November 7,2024</p>
+           </div>
+        </center>
+    </center>
+
+    
+
+</body>
+
+{% endblock %}

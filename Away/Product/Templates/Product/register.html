@@ -1,0 +1,114 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  REGISTER
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+
+<body class="bo">
+
+
+
+
+   <div style="width: 100%;">
+
+     <img style="width: 100%;" src=" {% static 'Product/picture/027.jpg' %}" alt="">
+
+     <div style="width: 80%;margin-left: 150px;">
+        <h1 style="color: #666666;">REGISTRATION</h1>
+        <h3 style="width: 75%;color: #034575;">
+            STUDENTS INTERESTED IN ATTENDING SCI HIGH MUST COMPLETE NOLA-PS COMMON APPLICATION DURING ENROLLMENT ROUNDS. 
+        </h3>
+        <p style="width: 80%;color: #444444;">
+          To register families are required to create a family profile, rank Sci High as a preference, submit
+         an application and wait for placement results. Students who are placed at Sci High will receive a notification
+          to register by submitting required documents to the registrar. For more information about our school please 
+          visit the enrollment guid
+        </p>
+
+        <center style="justify-content: space-between;display: flex;flex-wrap: wrap;width: 80%;color: white;
+        font-weight: bold;">
+          
+            <p style="background-color: #F7941D;padding: 10px 10px;">PROSPECTS ENROLLMENT GUIDE</p>
+            <p class="myhover" style="background-color: #F7941D;padding: 10px 10px;">NOLA-PS COMMON APPLICATION</p>
+            <p class="myhover" style="background-color: #F7941D;padding: 10px 10px;">NEW STUDENT REGISTRATION</p>
+        </center>
+
+     </div>
+   </div>
+
+   <div style="width: 100%;background-color: #efefef;color: #01416F;font-weight: bold;">
+
+       <!-- <center style="padding-top: 50px;"><h3>REGISTRATION INQUIRES</h3></center>
+      <div style="width: 100%;flex-wrap: wrap;display: flex;"> -->
+    
+        <form action="" style="width: 100%;">
+          <center style="padding-top: 30px;"><h3>REGISTRATION INQUIRES</h3></center>
+         <center>
+          <div style="margin-right: 77%;margin-top: 50px;"> <label for="name">Name :</label></div>
+          <input style="width: 80%;height: 30px;margin-top: 20px;margin-bottom: 20px;border: 1px solid"
+           type="text"
+           name="name" id="" placeholder="Your Name">
+      
+          <div style="margin-right: 77%;"><label for="email">Email</label></div>
+          <input style="width: 80%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid"
+           type="email" name="email" id="" placeholder="Email">
+      
+         <div style="margin-right: 77%;"> <label for="phone">Phone</label></div>
+          <input style="width: 80%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid;" 
+          type="tel" name="phone" id="">
+      
+           <div style="margin-right: 77%;"><label for="">Reason</label></div>
+           <select style="width: 80%;;height: 50px;margin-bottom: 20px;margin-top: 20px;color: #666666;border: 1px solid;"
+           name="" id="Reason">
+            <option value="General">General</option>
+            <option value="Academics">Academics</option>
+            <option value="Current Students">Current Students</option>
+            <option value="Parent Board Representative">Parent Board Representative</option>
+            <option value="Other">Other</option>
+      
+      
+      
+      
+           </select>
+
+           <div style="margin-right: 71%;">
+            <label for="comment/Question:">comment/Question:</label>
+          </div>
+         <input style="width: 80%;height: 100px;margin-top: 20px;border: 1px solid" type="text" name="" id="">
+  
+      
+         </div>
+         
+       <div>
+        <input style="color:white;background-color:  #F7941D;margin-bottom: 30px;font-weight: bold;" 
+        class="sub myhover" type="submit" value="submit">
+       </div>
+      </center>
+         
+          </form>
+
+      </div>
+
+      <!-- <center style="width: 100%;">
+       <div  style="margin-left: 280px;margin-top: 80px;background-color: #F7941D;width: 90px;color: white;
+       padding: 10px 10px;"
+       > SUBMIT</div>
+      </center> -->
+
+    
+
+   
+
+    
+    
+</body>
+
+{% endblock %}

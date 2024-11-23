@@ -1,0 +1,49 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  DONA
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+
+<body class="bo">
+
+
+    <div style="width: 60%;background-color: rgb(236, 233, 233);height: 80%;">
+
+        <div>
+            <img style="width: 200px;width: 300px;" src=" {% static 'Product/picture/46.jpg' %}" alt="">
+        </div>
+        <p>
+           1: Enter Gift Information
+        </p>
+
+        <p style="color: red;">
+            Please select one or more item(s) by checking the box to the left of the item name.
+        </p>
+
+        <div style="width: 90%;background-color: white;">
+            <p>
+                <input type="checkbox" name="" id="">
+                <label for="Make A Donation Today">Make A Donation Today</label>
+            </p>
+            <p>Amount</p>
+            <div style="display: flex;width: 150px;flex-wrap: wrap;">
+                
+          input
+                    
+            </div>
+          
+        </div>
+    </div>
+
+    
+</body>
+
+{% endblock %}

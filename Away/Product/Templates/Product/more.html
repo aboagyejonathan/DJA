@@ -1,0 +1,76 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  MORE
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+
+
+<body class="bo">
+
+       <div>
+        <img style="width: 100%;" src=" {% static 'Product/picture/1.jpg' %}" alt="">
+       </div>
+
+       <div class="board">
+
+        <h1>NEWSROOM UPDATE</h1>
+        <div>
+            <h4>CHAMBER CHAT</h4>
+            <p>March 5,2024</p>
+        </div>
+
+        <div>
+            <h4>ADVOCATES BOARD MEETING</h4>
+            <p>April 16,2024</p>
+        </div>
+
+        <div>
+            <h4>SCIENCE FAIR 2024 RESULTS</h4>
+            <p>June 24,2024</p>
+        </div>
+
+        <div>
+            <h4>COVID TESTING</h4>
+            <p>June 30,2024</p>
+        </div>
+
+        <div>
+            <h4>PROCEDURE FOR PARENT BOARD MEMBERSHIP</h4>
+            <p>August 1,2024</p>
+        </div>
+
+
+
+       </div>
+
+       <div class="covid">
+
+       <center><h1>FREE COVID TESTING</h1></center>
+
+       <center>
+        <P>
+            Sci High will offer free weekly COVID testing. A new electronic consent is required.
+             Tests will be administered every Tuesday afternoon until further notice. 
+             Only students who are registered 24 hours ahead of time will be allowed to participate.
+        </P>
+       
+       </center>
+      
+       <div style="width: 50%;display: flex;margin-left:350px;">
+        <p style="background: orange;width: 100px;padding: 10px 20px;">MORE INFO</p>
+       </div>
+     
+      </div>
+       
+
+</body>
+
+{% endblock %}

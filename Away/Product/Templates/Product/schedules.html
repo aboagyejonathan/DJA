@@ -1,0 +1,117 @@
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  DAILY SCHEDULES
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static%}
+
+<body class="bo">
+
+
+
+    <div style="width: 100%;display: flex;flex-wrap: wrap;margin-bottom: 50px;">
+
+        <center style="display: flex;flex-wrap: wrap;width: 100%;justify-content: space-around;color: #034575;">
+
+            <center style="width: 50%;display: inline;flex-wrap: wrap;;
+          font-weight: bold;margin-left: 30px;">
+
+          <h1 style="padding-top: 0px;">SINCE FAIR VOLUNTEER FORM DECEMBER 11TH ,2024 5:00PM</h1>
+             <div style="display: flex;flex-wrap: wrap;margin-top: 40px;">
+              <label style="margin-bottom: 20px;" for="">NAME:</label>
+              <input style="width: 800px;height: 30px;margin-bottom: 20px;" type="text" name="" id="">
+  
+              <label style="margin-bottom: 20px;" for="">EMAIL:</label>
+              <input  style="width: 800px;height: 30px;" type="email" name="" id="">
+             </div>
+          
+  
+  
+              <p style="text-align: left;">SET UP & REMOVAL: Setting up the venue and ensure a smooth removal 
+                  process post-event::</p>
+              <input style="margin-right: 600px;height: 30px;width: 50px;" type="checkbox" name="" id="">
+             
+  
+              
+                  <p style="text-align: left;">JUDGING: Be part of the team that evaluates and recognizes the outstanding
+                       projects presented
+                      by our talented students::</p>
+                      <input  style="margin-right: 600px;;height: 30px;width: 50px;" type="checkbox" name="" id="">
+              
+  
+              
+                  <p style="text-align: left;">CATEGORIZING PROJECTS: Help organize and categorize the projects for a seamless and enjoyable
+                      experience for our participants and visitors::</p>
+                      <input  style="margin-right: 600px;;height: 30px;width: 50px;" type="checkbox" name="" id="">
+              
+  
+              
+                  <p style="text-align: left;">
+                    COACHING: Share your expertise by coaching students, helping them prepare for the judging process:</p>
+                  <input  style="margin-right: 600px;;height: 30px;width: 50px;" type="checkbox" name="" id="">
+  
+                  <!-- <div>
+                    <button type="submit">submit</button>
+                  </div> -->
+                  <center>
+                    <p style="color: white;background-color :#f7941d;width: 70px;padding: 10px 24px;">SUBMIT</p>
+                  </center>
+            </center>
+          
+        
+  
+          <center style="width: 40%;text-align: left;">
+              <h1  style="color: #01416F;">DIARY SCHEDULES</h1>
+              <h3 style="font-weight: bold;color: #666666;">March 5,2011 | By</h3>
+      
+              <h3  style="color: #01416F;">ARRIVIES</h3>
+
+              <li style="color: #666666;width: 350px;margin-top: 20;margin-bottom: 10px;">
+                The student entrance at North Johnson Street opens at 7:15 a.m. It is important 
+                that students do not arrive before this time.
+              </li>
+              
+              <li style="color: #666666;width: 350px;margin-top: 0;margin-bottom: 30px;">
+                Families must make arrangements for students who will need to arrive earlier.
+              </li>
+              <h3  style="color: #01416F;margin-top: 0;margin-bottom: 30px;">EARLY SIGN OUT</h3>
+
+              <li style="color: #666666;width: 350px;margin-top: 0;margin-bottom: 10px;">
+                students <span style="font-weight: bold;text-decoration: underline;">are not</span>
+                 allowed to check out after 2:30 p.m. on regular schedule days and after
+                 11:45 a.m. on early dismissal days (Wednesdays).
+              </li>
+              <li style="color: #666666;width: 350px;margin-top: 0;margin-bottom: 10px;">
+                No student may leave campus during the school day unless a parent or other approved
+              person signs out the student in the main office. A parent may give another adult permission
+             to check out their child as a part of the enrollment packet contact information submitted
+             to the registrar during orientation or notify the front office via phone call prior to the 
+             student being checked out. The adult must present an ID to check out the student. 
+             Students who leave the school without permission are cutting class and will face immediate consequences.
+              </li>
+              <li style="color: #666666;width: 350px;margin-top: 0;margin-bottom: 40px;">
+                Students 18 and over may check out of school with permission from a parent or guardian.
+             The parent or guardian of the 18-year-old student must be notified and the parent or 
+             guardian must give permission to the front office staff before the student may check out of school.
+              </li>
+
+              <h3 style="color: #01416F;margin-top: 0;margin-bottom: 20px;">DAIRY SUCEDULES</h3>
+              <img style="width: 300px;" src=" {% static 'Product/picture/038.png' %}" alt="">
+             
+          </center>
+        </center>
+  
+      </div>
+
+      
+
+            
+          </body>
+
+{% endblock %}
