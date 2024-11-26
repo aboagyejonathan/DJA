@@ -242,7 +242,7 @@
         </div>
 
           {% if request.user.is_superuser or request.user.is_staff %}
-<a href="{% url 'admin' %}">AdminPage</a>
+<!--<a href="{% url 'admin' %}">AdminPage</a>-->
 {% endif %}
 
 {% if request.user.is_authenticated %}
