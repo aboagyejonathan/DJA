@@ -58,10 +58,10 @@
    <center style="width: 100%;justify-content: space-around;display: flex;flex-wrap: wrap;">
 
      <center>
-       <h2 style="color: #034575;margin-bottom: 50px;">#STAYINGAME</h2>
+       <h2 style="color: #034575;margin-bottom: 50px;" >#STAYINGAME</h2>
+         <div class="grid">
 
-         {% for data in keyInView %}
-       <div class="grid">
+           {% for data in keyInView %}
            <img style="width: 150px;height:150px;" src="{{ data.image.url }}" alt="">
 <!--         <img style="width: 150px;height: 150px;" src=" {% static 'Product/picture/23.JPG' %}" alt="">-->
 <!--         <img style="width: 150px;height: 150px;" src=" {% static 'Product/picture/24.jpeg' %}" alt="">-->
@@ -72,10 +72,11 @@
 <!--         <img style="width: 150px;height: 150px;" src=" {% static 'Product/picture/61.jpg' %}" alt="">-->
 <!--         <img style="width: 150px;height: 150px;" src=" {% static 'Product/picture/62.jpg' %}" alt="">-->
 <!--         <img style="width: 150px;height: 150px;" src=" {% static 'Product/picture/17.jpg' %}" alt="">-->
-         
+            {% endfor %}
+
        </div>
 
-         {% endfor %}
+
        <p class="insta myhover"> <a style="text-decoration: none;color: white;" href=
          "https://www.instagram.com/jonathan_iconic?igsh=amY5ZnV6eWRyb3py&utm_source=qr"
          >INSTAGRAM</a></p>
