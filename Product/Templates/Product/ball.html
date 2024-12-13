@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
+{% extends 'Layout/layout.html'%}
+
+  {% block title %}
+
+  BOY'S BASKETBALL
+  {% endblock  %}
+
+  {% block content  %}
+
+
+
+{% load static %}
+
+
+<body class="bo">
+
+<img style="width: 100%;" src=" {% static 'Product/picture/00021.jpg' %}" alt="">
+
+<center style="width:100%;display-flex:flexs">
+
+    <h1 style="color:#034575;margin-bottom:40px">2024 - 2025 SEASON SCHEDULES</h1>
+
+<table style="width:100%;margin-left:100px;display-flex:flex">
+
+    <tr style="text-align:left">
+        <th>DATE</th>
+        <th>TIME</th>
+        <th>OPPONENT</th>
+        <th>LOCATION</th>
+    </tr>
+
+    <tr>
+        <td>05/11/2025</td>
+         <td>10:00 AM</td>
+         <td>KUMASI HIGH</td>
+         <td>AWAY</td>
+    </tr>
+
+      <tr>
+        <td>25/11/2025</td>
+         <td>2:00 PM</td>
+         <td>TOSS</td>
+         <td>HOME</td>
+    </tr>
+
+      <tr>
+        <td>1/12/2025</td>
+         <td>10:30 AM</td>
+         <td>KOSS</td>
+         <td>HOME</td>
+    </tr>
+
+      <tr>
+        <td>17/12/2025</td>
+         <td>9:00 AM</td>
+         <td>OWASS</td>
+         <td>AWAY</td>
+    </tr>
+
+</table>
+
+</center>
 </body>
-</html>
+
+
+{% endblock %}

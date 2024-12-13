@@ -30,8 +30,9 @@ urlpatterns = [
     path('confidential/', Confidential, name='Confidential'),
     path('advocate/', Advacate, name='Advocate'),
     path('cross/', Cross, name='Cross'),
-    path('table/', Table, name='Table'),
     path('add_venue',views.add_venue ,name='add-venue'),
+    path('ball/', Ball, name='ball'),
+    path('volley/', Volley, name='Volley'),
 
     path('sports/<int:sports_id>',Sports ,name='sports'),
 

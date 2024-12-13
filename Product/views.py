@@ -132,9 +132,14 @@ def Cross (request):
 
     return render(request,'Product/cross.html',{"key":"Data from Database"})
 
-def Table (request):
+def Ball (request):
 
-    return render(request,'Product/table.html',{"key":"Data from Database"})
+    return render(request,'Product/ball.html',{"key":"Data from Database"})
+
+def Volley (request):
+
+    return render(request,'Product/volley.html',{"key":"Data from Database"})
+
 
 
 
