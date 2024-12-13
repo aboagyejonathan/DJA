@@ -1,0 +1,42 @@
+{% extends 'Layout/layout.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+
+
+{% load static %}
+
+
+
+    <center style="width:100%," >
+
+    <h1>
+       Add Venue To Database
+    </h1>
+
+    <br/><br/>
+    {% if submitted %}
+        Your Submitted Was Successfully
+
+    {% else %}
+
+      <form class="height: 300px" action="" method=POST>
+        {% csrf_token%}
+
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-secondary">
+
+      </form>
+
+    {% endif%}
+
+
+
+</center>
+
+
+
+{% endblock %}

@@ -56,7 +56,9 @@
          <div class="grid">
 
            {% for data in keyInView %}
+             <a href="/sports/{{data.id}}" >
            <img style="width: 150px;height:150px;" src="{{ data.image.url }}" alt="">
+             </a>
              {% endfor %}
 
        </div>
@@ -72,12 +74,12 @@
        <div style="margin-bottom: 50px;">
 
          <center style="text-align: left;margin-bottom: 30px;">
-           <h3 style="color: #034575;margin-bottom: 10px;">CHAMBER CHAT</h3>
+           <h3 > <a style="color: #034575;margin-bottom: 10px;text-decoration:none" href="/confidential/">CHAMBER CHAT </a> </h3>
          <p style="color: #666666;margin-top: 0px;">January 5,2024</p>
          </center>
    
          <center  style="text-align: left;;margin-bottom: 30px;">
-           <h3 style="color: #034575;;margin-bottom: 10px;">ADVOCATES BOARD MEETING</h3>
+           <h3> <a style="color: #034575;;margin-bottom: 10px;text-decoration:none" href="/advocate/">ADVOCATES BOARD MEETING </a> </h3>
            <p  style="color: #666666;margin-top: 0px;">March 19,2024</p>
          </center>
    
@@ -100,7 +102,7 @@
         
        <p  class="news myhover"> <a style="text-decoration: none;
          color: white;"
-           href="more.html">
+           href="/more/">
           MORE NEWS</a>
          </p> 
      </center>
@@ -140,7 +142,7 @@
                credentials.</p>
 
 
-               <p class="mor myhover"><a style="text-decoration: none;" href="mission.html">MORE</a></p>
+               <p class="mor myhover"><a style="text-decoration: none;" href="/mission/">MORE</a></p>
              
 
             </div>
@@ -159,50 +161,56 @@
 
 
   </div>
-  
- <form action="" style="background-color: rgb(210, 241, 241);width: 100%;">
-   <center><h1>CONTACT US</h1></center>
-  <center>
-   <div style="margin-right: 37%;"> <label for="name">Name :</label></div>
-   <input style="width: 40%;height: 30px;margin-top: 20px;margin-bottom: 20px;border: 1px solid"
-    type="text"
-    name="name" id="" placeholder="Your Name">
 
-   <div style="margin-right: 37%;"><label for="email">Email</label></div>
-   <input style="width: 40%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid"
-    type="email" name="email" id="" placeholder="Email">
-
-  <div style="margin-right: 37%;"> <label for="phone">Phone</label></div>
-   <input style="width: 40%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid;" 
-   type="tel" name="phone" id="">
-
-    <div style="margin-right: 37%;"><label for="">Reason</label></div>
-    <select style="width: 40%;;height: 50px;margin-bottom: 20px;margin-top: 20px;color: #666666;border: 1px solid;"
-    name="" id="Reason">
-     <option value="General">General</option>
-     <option value="Academics">Academics</option>
-     <option value="Current Students">Current Students</option>
-     <option value="Parent Board Representative">Parent Board Representative</option>
-     <option value="Other">Other</option>
+ <center style="width:100%">
 
 
 
+     </center>
 
-    </select>
+<!--  <form action="" style="background-color: rgb(210, 241, 241);width: 100%;">-->
+<!--   <center><h1>CONTACT US</h1></center>-->
+<!--  <center>-->
+<!--   <div style="margin-right: 37%;"> <label for="name">Name :</label></div>-->
+<!--   <input style="width: 40%;height: 30px;margin-top: 20px;margin-bottom: 20px;border: 1px solid"-->
+<!--    type="text"-->
+<!--    name="name" id="" placeholder="Your Name">-->
 
-  </div>
-  <div style="margin-right: 32%;">
-   <label for="comment/Question:">comment/Question:</label>
- </div>
+<!--   <div style="margin-right: 37%;"><label for="email">Email</label></div>-->
+<!--   <input style="width: 40%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid"-->
+<!--    type="email" name="email" id="" placeholder="Email">-->
 
- <input style="width: 40%;height: 100px;margin-top: 20px;border: 1px solid" type="text" name="" id="">
-<div>
- <input style="color:white;background-color:  #F7941D;margin-bottom: 30px;font-weight: bold;" 
- class="sub myhover" type="submit" value="submit">
-</div>
-</center>
-  
-   </form>
+<!--  <div style="margin-right: 37%;"> <label for="phone">Phone</label></div>-->
+<!--   <input style="width: 40%;height: 30px;margin-bottom: 20px;margin-top: 20px;border: 1px solid;"-->
+<!--   type="tel" name="phone" id="">-->
+
+<!--    <div style="margin-right: 37%;"><label for="">Reason</label></div>-->
+<!--    <select style="width: 40%;;height: 50px;margin-bottom: 20px;margin-top: 20px;color: #666666;border: 1px solid;"-->
+<!--    name="" id="Reason">-->
+<!--     <option value="General">General</option>-->
+<!--     <option value="Academics">Academics</option>-->
+<!--     <option value="Current Students">Current Students</option>-->
+<!--     <option value="Parent Board Representative">Parent Board Representative</option>-->
+<!--     <option value="Other">Other</option>-->
+
+
+
+
+<!--    </select>-->
+
+<!--  </div>-->
+<!--  <div style="margin-right: 32%;">-->
+<!--   <label for="comment/Question:">comment/Question:</label>-->
+<!-- </div>-->
+
+<!-- <input style="width: 40%;height: 100px;margin-top: 20px;border: 1px solid" type="text" name="" id="">-->
+<!--<div>-->
+<!-- <input style="color:white;background-color:  #F7941D;margin-bottom: 30px;font-weight: bold;"-->
+<!-- class="sub myhover" type="submit" value="submit">-->
+<!--</div>-->
+<!--</center>-->
+
+<!--   </form>-->
 
    <div style=" background-color: #034575;width: 100%;
    padding-top: 80px;margin-top: 10px;display: flex;flex-wrap: wrap;margin-bottom: 20px;">
@@ -222,7 +230,7 @@
          OUR SCHOOL IS RANKED A 'B' BY THE LOUISIANA DEPARTMENT OF EDUCATION
         </p>
    
-        <p class="mation myhover"><a style="text-decoration: none;color: white;" href="index.html">
+        <p class="mation myhover"><a style="text-decoration: none;color: white;" href="/">
          MORE INFORMATION</a></p>
       </div>
 
@@ -268,8 +276,8 @@
  </div>
  
 </body>
-</html>
- 
+
+
 
 {% endblock  %}
 

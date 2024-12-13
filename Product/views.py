@@ -2,24 +2,45 @@ from django.shortcuts import render
 
 from .models import Product
 
+from django.http import HttpResponseRedirect
+
+from .forms import VenueForm
+
+
+
+
 
 # Create your views here.
+
+class  Home:
+    pass
+
+
+# def Atheletics(request):
+#     return render(request, 'Product/athletics.html', {"key": "Data from Database"})
+
 def Home (request):
+    form = VenueForm
     Products = Product.objects.filter(type='sports')
     Products1 = Product.objects.filter(type='board')
-    contexts={"keyInView": Products,"keyInBoard": Products1}
+
+    contexts={"keyInView": Products,"keyInBoard": Products1,"form" : form}
 
     return render(request,'Product/index.html',contexts)
 
 
 
 def Atheletics (request):
-    
+
     return render(request,'Product/athletics.html',{"key":"Data from Database"})
 
 def About (request):
+    Products = Product.objects.filter(type='sports')
+    Products1 = Product.objects.filter(type='board')
 
-    return render(request,'Product/about.html',{"key":"Data from Database"})
+    contexts = {"keyInView": Products, "keyInBoard": Products1}
+
+    return render(request,'Product/about.html',contexts)
 
 def Calendar (request):
 
@@ -99,6 +120,41 @@ def Dona (request):
 
     return render(request,'Product/dona.html',{"key":"Data from Database"})
 
+def Confidential (request):
+
+    return render(request,'Product/confidential.html',{"key":"Data from Database"})
+
+def Advacate (request):
+
+    return render(request,'Product/advocate.html',{"key":"Data from Database"})
+
+def Cross (request):
+
+    return render(request,'Product/cross.html',{"key":"Data from Database"})
+
+def Table (request):
+
+    return render(request,'Product/table.html',{"key":"Data from Database"})
 
 
+
+def add_venue (request):
+    submitted = False
+    if request.method == 'POST':
+        form = VenueForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect ('/add_venue?submitted=True')
+    else :
+       form = VenueForm
+       if 'submitted' in request.GET:
+           submitted = True
+
+    return render(request,'Product/add_venue.html',{"form":form,"submitted":submitted})
+
+
+
+def Sports(request,sports_id):
+    sports =  Product.objects.get(id=sports_id)
+    return render(request, 'Product/sports_detail.html', {"sports": sports})
 
